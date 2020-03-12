@@ -1,0 +1,21 @@
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" >
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:padding="8dp"
+        android:layout_alignParentBottom="true">
+
+        <Button
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:id="@+id/save_button"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Save"
+            android:textSize="20sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</merge>

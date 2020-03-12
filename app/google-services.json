@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "933297542557",
+    "firebase_url": "https://artistaapp-23632.firebaseio.com",
+    "project_id": "artistaapp-23632",
+    "storage_bucket": "artistaapp-23632.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:933297542557:android:1d75157f73448a38dbcb74",
+        "android_client_info": {
+          "package_name": "com.example.artistaapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "933297542557-cacu6e8lt17bcji4ov7lmf0iuolahvir.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC1wo77pQTy6Pu615oKDmEt2tbhre5YGZQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "933297542557-cacu6e8lt17bcji4ov7lmf0iuolahvir.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,204 @@
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:padding="20dp">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:id="@+id/profile_photo"
+                android:layout_marginTop="20dp"
+                android:layout_centerHorizontal="true"
+                app:civ_border_color="@color/black"
+                app:civ_border_width="2dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Change Photo"
+                android:id="@+id/changeProfilePhoto"
+                android:layout_below="@id/profile_photo"
+                android:layout_centerHorizontal="true"
+                android:textColor="@color/blue"
+                android:textSize="16sp"/>
+
+            <!-- Display user name section -->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@id/changeProfilePhoto"
+                android:layout_marginTop="80dp"
+                android:background="@drawable/grey_border_bottom"
+                android:id="@+id/relLayout1">
+
+                <ImageView
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:src="@drawable/ic_user"
+                    android:layout_centerVertical="true"/>
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="40dp"
+                    android:background="@null"
+                    android:inputType="textNoSuggestions"
+                    android:id="@+id/username"
+                    android:hint="Username"/>
+            </RelativeLayout>
+
+            <!-- Display first name section -->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@id/relLayout1"
+                android:background="@drawable/grey_border_bottom"
+                android:layout_marginTop="10dp"
+                android:id="@+id/relLayout2">
+
+                <ImageView
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:src="@drawable/ic_name"
+                    android:layout_centerVertical="true"/>
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="40dp"
+                    android:background="@null"
+                    android:inputType="textNoSuggestions"
+                    android:id="@+id/firstName"
+                    android:hint="First Name"/>
+            </RelativeLayout>
+
+            <!-- Display website section -->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@id/relLayout2"
+                android:background="@drawable/grey_border_bottom"
+                android:layout_marginTop="10dp"
+                android:id="@+id/relLayout3">
+
+                <ImageView
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:src="@drawable/ic_name"
+                    android:layout_centerVertical="true"/>
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="40dp"
+                    android:background="@null"
+                    android:inputType="textNoSuggestions"
+                    android:id="@+id/lastName"
+                    android:hint="Last Name"/>
+            </RelativeLayout>
+
+            <!-- Display description section -->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@id/relLayout3"
+                android:background="@drawable/grey_border_bottom"
+                android:layout_marginTop="10dp"
+                android:id="@+id/relLayout4">
+
+                <ImageView
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:src="@drawable/ic_location"
+                    android:layout_centerVertical="true"/>
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="40dp"
+                    android:background="@null"
+                    android:inputType="textNoSuggestions"
+                    android:id="@+id/address"
+                    android:hint="Address"/>
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/relLayout4"
+                android:gravity="center"
+                android:layout_marginTop="40dp"
+                android:background="@drawable/grey_border_bottom"
+                android:textColor="@color/black"
+                android:textSize="28sp"
+                android:text="CONTACT INFORMATION"
+                android:id="@+id/private_info" />
+
+            <!-- Display email section -->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@id/private_info"
+                android:background="@drawable/grey_border_bottom"
+                android:layout_marginTop="10dp"
+                android:id="@+id/relLayout5">
+
+                <ImageView
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:src="@drawable/ic_email"
+                    android:layout_centerVertical="true"/>
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="40dp"
+                    android:background="@null"
+                    android:inputType="textNoSuggestions"
+                    android:id="@+id/email"
+                    android:hint="Email"/>
+            </RelativeLayout>
+
+            <!-- Display phone section -->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@id/relLayout5"
+                android:background="@drawable/grey_border_bottom"
+                android:layout_marginTop="10dp"
+                android:id="@+id/relLayout6">
+
+                <ImageView
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:src="@drawable/ic_phone"
+                    android:layout_centerVertical="true"/>
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="40dp"
+                    android:background="@null"
+                    android:inputType="textNoSuggestions"
+                    android:id="@+id/phone"
+                    android:hint="Phone Number"/>
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</merge>

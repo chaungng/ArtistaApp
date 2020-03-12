@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <!-- This is the middle section (Body) -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/relLayout1">
+
+            <include layout="@layout/layout_center_recyclerview_love" />
+
+        </RelativeLayout>
+
+        <!-- This is the bottom navigation -->
+        <include layout="@layout/layout_bottom_navigation_view" />
+
+    </RelativeLayout>
+</LinearLayout>

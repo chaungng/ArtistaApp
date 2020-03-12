@@ -1,0 +1,158 @@
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="450dp"
+        android:minHeight="250dp"
+        app:cardCornerRadius="5dp"
+        app:cardElevation="10dp"
+        app:cardMaxElevation="15dp"
+        app:contentPaddingLeft="10dp"
+        app:contentPaddingRight="10dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/cardConstraintLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/cardConstraintLayoutImage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/cardConstraintLayout">
+
+                <ImageView
+                    android:id="@+id/cardImage"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_marginTop="12dp"
+                    android:scaleType="centerCrop"
+                    app:layout_constraintDimensionRatio="H,16:9"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/cardConstraintLayoutImage"
+                    app:srcCompat="@android:color/darker_gray" />
+
+                <ToggleButton
+                    android:id="@+id/favorite_button"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginStart="4dp"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginEnd="4dp"
+                    android:background="@drawable/button_favorite"
+                    android:padding="12dp"
+                    android:text=""
+                    android:textOff=""
+                    android:textOn=""
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintTop_toTopOf="@+id/cardImage" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+            <TextView
+                android:id="@+id/cardTitle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:paddingLeft="4dp"
+                android:text="Female medium bob hair cut"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/cardConstraintLayoutImage" />
+
+            <TextView
+                android:id="@+id/cardPrice"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:text="$119.99"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                android:textColor="@color/secondaryColor"
+                android:textSize="20sp"
+                app:layout_constraintStart_toEndOf="@+id/cardTitle"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@id/cardTitle"/>
+
+            <TextView
+                android:id="@+id/cardSalon"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                android:layout_marginTop="4dp"
+                android:text="Sunshine Salon"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                android:textColor="@color/black"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/cardTitle"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <TextView
+                android:id="@+id/cardLocation"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                android:layout_marginTop="4dp"
+                android:text="New Westminster, BC"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                android:textColor="@color/grey"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/cardSalon" />
+
+            <TextView
+                android:id="@+id/cardSalonTime"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="140dp"
+                android:text="Duration: 90 mins"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                android:textColor="@color/grey"
+                app:layout_constraintStart_toEndOf="@+id/cardLocation"
+                app:layout_constraintTop_toTopOf="@+id/cardLocation" />
+
+            <TextView
+                android:id="@+id/cardDescription"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="4dp"
+                android:lineSpacingExtra="8dp"
+                android:text="Description for an awesome service, to provide customers about the service in detail"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                android:textColor="@color/black"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/cardSalonTime" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/book_now_button"
+                style="@style/Widget.AppCompat.Button.Colored"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:minWidth="0dp"
+                android:paddingStart="8dp"
+                android:paddingEnd="8dp"
+                android:text="Book Now!"
+                android:textColor="@color/white"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/cardDescription" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</merge>

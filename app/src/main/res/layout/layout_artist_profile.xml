@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/background_selector"
+    android:id="@+id/artist_profile_layout">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/artist_photo"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_centerVertical="true"
+        android:padding="15dp" />
+
+    <TextView
+        android:id="@+id/artist_name"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="150dp"
+        android:gravity="center_vertical"
+        android:paddingStart="20dp"
+        android:text="Antonio Casanova"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/artist_exp"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_below="@+id/artist_name"
+        android:layout_marginStart="150dp"
+        android:gravity="center_vertical"
+        android:paddingStart="20dp"
+        android:text="Year of experience: 7 years"
+        android:textSize="16dp" />
+
+    <TextView
+        android:id="@+id/artist_level"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_below="@+id/artist_exp"
+        android:layout_marginStart="150dp"
+        android:gravity="center_vertical"
+        android:paddingStart="20dp"
+        android:text="Level: Senior"
+        android:textSize="16dp" />
+
+
+    <TextView
+        android:id="@+id/artist_price_adjust"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_below="@+id/artist_level"
+        android:layout_marginStart="150dp"
+        android:gravity="center_vertical"
+        android:paddingStart="20dp"
+        android:text="Price adjustment: +20%"
+        android:textSize="16dp" />
+
+</RelativeLayout>

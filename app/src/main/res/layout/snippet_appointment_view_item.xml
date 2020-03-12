@@ -1,0 +1,214 @@
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="5dp"
+        app:cardElevation="10dp"
+        app:cardMaxElevation="15dp"
+        app:contentPaddingLeft="10dp"
+        app:contentPaddingRight="10dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/cardConstraintLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/cardImage"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_marginTop="12dp"
+                android:scaleType="centerCrop"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/cardConstraintLayout"
+                app:srcCompat="@android:color/darker_gray" />
+
+            <TextView
+                android:id="@+id/cardStatus"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:paddingLeft="4dp"
+                android:text="Up-coming"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                android:textColor="@color/secondaryColor"
+                android:textSize="18sp"
+                app:layout_constraintEnd_toEndOf="@id/cardConstraintLayout"
+                app:layout_constraintStart_toEndOf="@id/cardImage"
+                app:layout_constraintTop_toTopOf="@id/cardImage" />
+
+            <TextView
+                android:id="@+id/cardTitle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                android:layout_marginTop="8dp"
+                android:paddingLeft="4dp"
+                android:text="Female medium bob hair cut"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                app:layout_constraintEnd_toEndOf="@id/cardConstraintLayout"
+                app:layout_constraintStart_toEndOf="@id/cardImage"
+                app:layout_constraintTop_toBottomOf="@id/cardStatus" />
+
+            <TextView
+                android:id="@+id/cardSalon"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                android:layout_marginTop="8dp"
+                android:paddingLeft="4dp"
+                android:text="Sunshine Salon"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                android:textColor="@color/black"
+                app:layout_constraintEnd_toEndOf="@id/cardConstraintLayout"
+                app:layout_constraintStart_toEndOf="@id/cardImage"
+                app:layout_constraintTop_toBottomOf="@id/cardTitle" />
+
+            <TextView
+                android:id="@+id/cardLocation"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                android:layout_marginTop="8dp"
+                android:paddingLeft="4dp"
+                android:text="New Westminster, BC"
+                android:textColor="@color/grey"
+                app:layout_constraintEnd_toEndOf="@id/cardConstraintLayout"
+                app:layout_constraintStart_toEndOf="@id/cardImage"
+                app:layout_constraintTop_toBottomOf="@id/cardSalon" />
+
+            <TextView
+                android:id="@+id/cardDate"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                android:layout_marginTop="8dp"
+                android:paddingLeft="4dp"
+                android:text="Date: 24-12-2019"
+                android:textStyle="bold"
+                android:textColor="@color/primaryTextColor"
+                android:textSize="18sp"
+                app:layout_constraintStart_toStartOf="@id/cardConstraintLayout"
+                app:layout_constraintTop_toBottomOf="@id/cardImage" />
+
+            <TextView
+                android:id="@+id/cardTime"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="45dp"
+                android:layout_marginTop="8dp"
+                android:paddingLeft="4dp"
+                android:text="Time: 10:00 am"
+                android:textColor="@color/primaryTextColor"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="@+id/cardConstraintLayout"
+                app:layout_constraintStart_toEndOf="@id/cardDate"
+                app:layout_constraintTop_toBottomOf="@id/cardImage" />
+
+            <TextView
+                android:id="@+id/cardArtist"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                android:layout_marginTop="8dp"
+                android:paddingLeft="4dp"
+                android:text="Artist: Chau Nguyen"
+                android:textColor="@color/primaryTextColor"
+                android:textSize="18sp"
+                app:layout_constraintStart_toStartOf="@id/cardConstraintLayout"
+                app:layout_constraintTop_toBottomOf="@id/cardDate" />
+
+            <TextView
+                android:id="@+id/cardLevel"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="8dp"
+                android:paddingLeft="4dp"
+                android:text="Level: Senior"
+                android:textColor="@color/primaryTextColor"
+                android:textSize="18sp"
+                app:layout_constraintEnd_toEndOf="@+id/cardConstraintLayout"
+                app:layout_constraintStart_toEndOf="@id/cardArtist"
+                app:layout_constraintTop_toBottomOf="@id/cardTime" />
+
+            <TextView
+                android:id="@+id/cardPrice"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                android:layout_marginTop="8dp"
+                android:paddingLeft="4dp"
+                android:text="Price: $119.90"
+                android:textColor="@color/primaryTextColor"
+                android:textSize="18sp"
+                app:layout_constraintStart_toStartOf="@id/cardConstraintLayout"
+                app:layout_constraintTop_toBottomOf="@id/cardArtist" />
+
+            <TextView
+                android:id="@+id/cardAdjust"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="75dp"
+                android:layout_marginTop="8dp"
+                android:paddingLeft="4dp"
+                android:text="Adjustment: $10"
+                android:textColor="@color/primaryTextColor"
+                android:textSize="18sp"
+                app:layout_constraintEnd_toEndOf="@+id/cardConstraintLayout"
+                app:layout_constraintStart_toEndOf="@id/cardPrice"
+                app:layout_constraintTop_toBottomOf="@id/cardLevel" />
+
+            <TextView
+                android:id="@+id/cardSum"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                android:layout_marginTop="8dp"
+                android:paddingLeft="4dp"
+                android:text="Sum: $129.90"
+                android:textColor="@color/primaryTextColor"
+                android:textSize="18sp"
+                app:layout_constraintStart_toStartOf="@id/cardConstraintLayout"
+                app:layout_constraintTop_toBottomOf="@id/cardPrice" />
+
+            <TextView
+                android:id="@+id/cardTax"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="80dp"
+                android:layout_marginTop="8dp"
+                android:paddingLeft="4dp"
+                android:text="Tax: $15.59"
+                android:textColor="@color/primaryTextColor"
+                android:textSize="18sp"
+                app:layout_constraintEnd_toEndOf="@+id/cardConstraintLayout"
+                app:layout_constraintStart_toEndOf="@id/cardSum"
+                app:layout_constraintTop_toBottomOf="@id/cardAdjust" />
+
+            <TextView
+                android:id="@+id/cardTotal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:gravity="right"
+                android:paddingLeft="4dp"
+                android:paddingRight="60dp"
+                android:text="Total: $145.49"
+                android:textColor="@color/secondaryColor"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="@+id/cardConstraintLayout"
+                app:layout_constraintTop_toBottomOf="@+id/cardTax" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</merge>
